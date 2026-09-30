@@ -3,93 +3,1300 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>MANIFEST â€” Tu realidad comienza aquÃ­</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<title>MANIFEST — Tu realidad comienza aquí</title>
 <style>
 :root{--bg:#050816;--card:#111735e8;--line:#e1d3ff2e;--text:#f8f5ff;--muted:#aaa8bc;--lav:#b8a3ff;--pink:#f0c7e7}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% 0,#18204d,#080c21 45%,#03050d);color:var(--text);font-family:"DM Sans",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% 0,#18204d,#080c21 45%,#03050d);color:var(--text);font-family:Arial,sans-serif}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:97px 97px}
-button,input,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}.serif{font-family:"Playfair Display",serif}
-.auth{min-height:100vh;display:grid;place-items:center;padding:20px}.authcard{width:min(430px,94vw);padding:34px 30px;border:1px solid var(--line);border-radius:30px;background:var(--card);box-shadow:0 30px 100px #0009;text-align:center}
-.star{font-size:50px;text-shadow:0 0 32px #d9c6ff}.brand{font:400 29px "Playfair Display";letter-spacing:5px;margin-top:8px}.tag{font-size:11px;color:var(--muted);margin-top:7px}.auth h2{font:400 25px "Playfair Display";margin:28px 0 7px}
-.field{width:100%;padding:14px 15px;margin-top:9px;border-radius:14px;border:1px solid var(--line);background:#030611cc;color:white;outline:0}.field:focus{border-color:#c8b6ff77}
-.btn{border:1px solid var(--line);border-radius:13px;padding:12px 17px;background:#ffffff08;color:#fff;font-size:11px;letter-spacing:.7px}.primary{border:0;background:linear-gradient(100deg,var(--lav),var(--pink));color:#211827}.wide{width:100%;margin-top:12px}.link{display:block;margin:16px auto 0;color:#d5cae9;background:none;border:0;font-size:11px}
-.notice{margin-top:13px;padding:12px;border-radius:13px;border:1px solid var(--line);font-size:11px}.ok{color:#b9e7ce}.err{color:#efb4c8}
-.app{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:245px;padding:22px 16px;border-right:1px solid var(--line);background:#080d22f5;z-index:5}.sidebrand{padding:4px 10px 25px}.sidebrand .name{font:400 20px "Playfair Display";letter-spacing:3px;margin-left:7px}.sidebrand p{font-size:9px;color:var(--muted);margin:6px 0 0 34px}.nav{display:grid;gap:6px}.nav button{width:100%;border:1px solid transparent;background:none;color:#aaa7b7;border-radius:13px;padding:12px;text-align:left;font-size:11px}.nav button span{display:inline-block;width:24px}.nav button.active{color:#fff;background:#b6a4ff22;border-color:#d8c9ff27}
-.main{margin-left:245px;padding:20px 28px 45px}.topbar,.content{max-width:1150px;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:10px 2px 20px}.hello{font:400 28px "Playfair Display"}.topbar small{color:var(--muted);font-size:10px}.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#b9a8ff,#f0c9e8);color:#211827}
-.module{display:none}.module.active{display:block}.hero,.modulecard{border:1px solid var(--line);border-radius:24px;background:var(--card)}.hero{padding:35px 38px;min-height:205px}.eyebrow{font-size:9px;letter-spacing:2px;color:#bcb5cb}.hero h1{font:400 34px "Playfair Display";margin:11px 0 8px}.hero p{font-size:12px;color:var(--muted);max-width:520px;line-height:1.7}.section-title{display:flex;justify-content:space-between;align-items:center;margin:25px 2px 12px}.section-title h2{font:400 22px "Playfair Display";margin:0}.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{position:relative;min-height:180px;padding:23px;border-radius:22px;border:1px solid var(--line);background:#111735dd;color:#fff;text-align:left}.feature h3{font:400 23px "Playfair Display";margin:28px 0 6px}.feature p,.small{font-size:10px;color:var(--muted);line-height:1.5}.modulehead{margin-bottom:17px}.modulehead h1{font:400 31px "Playfair Display";margin:0}.modulehead p{font-size:11px;color:var(--muted)}
-.modulecard{padding:22px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.row{display:flex;gap:8px;align-items:center}.row .field{margin:0}.category-bar,.repeat{display:flex;gap:7px;flex-wrap:wrap}.chip,.repeat button{border:1px solid var(--line);background:#ffffff05;color:#bbb4c9;border-radius:99px;padding:8px 12px;font-size:10px}.chip.active,.repeat button.sel{background:#b6a4ff45;color:#fff}.affirm-list,.list{display:grid;gap:8px}.affirm-item{display:grid;grid-template-columns:1fr auto;gap:8px}.delete{border:0;background:none;color:#e2b7c7;font-size:18px}.practice{min-height:220px;display:grid;place-items:center;text-align:center;background:#b7a4ff0d;border-radius:18px;margin-top:14px}.affirm-big{font:400 30px "Playfair Display";max-width:650px;line-height:1.4}.gratgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.gratbox{min-height:145px;padding:14px;border:1px solid var(--line);border-radius:17px}.gratbox textarea{height:85px;resize:none;width:100%;margin-top:10px;border:0;outline:0;background:transparent;color:#eee;font-size:11px}.historyday{padding:14px 0;border-top:1px solid #ffffff0d;font-size:11px}.visualgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.upload{display:block;border:1px dashed #d9caff44;border-radius:17px;padding:25px;text-align:center;color:#aaa3b8;cursor:pointer}.images{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}.thumb{aspect-ratio:1;border-radius:12px;overflow:hidden;position:relative;background:#10152f}.thumb img{width:100%;height:100%;object-fit:cover}.thumb button{position:absolute;right:4px;top:4px;border:0;border-radius:50%;background:#0009;color:#fff}.progressgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.progressbox{padding:20px;border:1px solid var(--line);border-radius:18px}.progressbox b{display:block;font:400 30px "Playfair Display";margin-top:8px}.mobile-nav{display:none}
-@media(max-width:900px){.sidebar{width:205px}.main{margin-left:205px;padding:17px}.cards3{grid-template-columns:1fr}.gratgrid{grid-template-columns:1fr 1fr}.visualgrid,.grid2{grid-template-columns:1fr}.progressgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:650px){.sidebar{display:none}.main{margin-left:0;padding:12px 13px 90px}.hello{font-size:22px}.hero{padding:25px 23px}.hero h1{font-size:29px}.cards3,.gratgrid{grid-template-columns:1fr}.mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:10px;right:10px;bottom:10px;height:65px;border:1px solid var(--line);border-radius:19px;background:#0c1128ed;z-index:20}.mobile-nav button{border:0;background:none;color:#8f8b9b;font-size:8px}.mobile-nav button.active{color:#fff}.mobile-nav i{display:block;font-style:normal;font-size:18px;margin-bottom:4px}}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.hidden{display:none!important}
+.serif{font-family:Georgia,serif}
+
+.auth{min-height:100vh;display:grid;place-items:center;padding:20px}
+.authcard{width:min(430px,94vw);padding:34px 30px;border:1px solid var(--line);border-radius:30px;background:var(--card);box-shadow:0 30px 100px #0009;text-align:center}
+.star{font-size:50px;text-shadow:0 0 32px #d9c6ff}
+.brand{font:400 29px Georgia,serif;letter-spacing:5px;margin-top:8px}
+.tag{font-size:11px;color:var(--muted);margin-top:7px}
+.auth h2{font:400 25px Georgia,serif;margin:28px 0 7px}
+.field{width:100%;padding:14px 15px;margin-top:9px;border-radius:14px;border:1px solid var(--line);background:#030611cc;color:white;outline:0}
+.field:focus{border-color:#c8b6ff77}
+.btn{border:1px solid var(--line);border-radius:13px;padding:12px 17px;background:#ffffff08;color:#fff;font-size:11px;letter-spacing:.7px}
+.primary{border:0;background:linear-gradient(100deg,var(--lav),var(--pink));color:#211827}
+.wide{width:100%;margin-top:12px}
+.link{display:block;margin:16px auto 0;color:#d5cae9;background:none;border:0;font-size:11px}
+.notice{margin-top:13px;padding:12px;border-radius:13px;border:1px solid var(--line);font-size:11px}
+.ok{color:#b9e7ce}
+.err{color:#efb4c8}
+
+.app{min-height:100vh}
+.sidebar{position:fixed;inset:0 auto 0 0;width:245px;padding:22px 16px;border-right:1px solid var(--line);background:#080d22f5;z-index:5}
+.sidebrand{padding:4px 10px 25px}
+.sidebrand .name{font:400 20px Georgia,serif;letter-spacing:3px;margin-left:7px}
+.sidebrand p{font-size:9px;color:var(--muted);margin:6px 0 0 34px}
+.nav{display:grid;gap:6px}
+.nav button{width:100%;border:1px solid transparent;background:none;color:#aaa7b7;border-radius:13px;padding:12px;text-align:left;font-size:11px}
+.nav button span{display:inline-block;width:24px}
+.nav button.active{color:#fff;background:#b6a4ff22;border-color:#d8c9ff27}
+.main{margin-left:245px;padding:20px 28px 45px}
+.topbar,.content{max-width:1150px;margin:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:10px 2px 20px}
+.hello{font:400 28px Georgia,serif}
+.topbar small{color:var(--muted);font-size:10px}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#b9a8ff,#f0c9e8);color:#211827}
+
+.module{display:none}
+.module.active{display:block}
+.hero,.modulecard{border:1px solid var(--line);border-radius:24px;background:var(--card)}
+.hero{padding:35px 38px;min-height:205px}
+.eyebrow{font-size:9px;letter-spacing:2px;color:#bcb5cb}
+.hero h1{font:400 34px Georgia,serif;margin:11px 0 8px}
+.hero p{font-size:12px;color:var(--muted);max-width:520px;line-height:1.7}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin:25px 2px 12px}
+.section-title h2{font:400 22px Georgia,serif;margin:0}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature{position:relative;min-height:180px;padding:23px;border-radius:22px;border:1px solid var(--line);background:#111735dd;color:#fff;text-align:left}
+.feature h3{font:400 23px Georgia,serif;margin:28px 0 6px}
+.feature p,.small{font-size:10px;color:var(--muted);line-height:1.5}
+.modulehead{margin-bottom:17px}
+.modulehead h1{font:400 31px Georgia,serif;margin:0}
+.modulehead p{font-size:11px;color:var(--muted)}
+.modulecard{padding:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row{display:flex;gap:8px;align-items:center}
+.row .field{margin:0}
+.category-bar,.repeat{display:flex;gap:7px;flex-wrap:wrap}
+.chip,.repeat button{border:1px solid var(--line);background:#ffffff05;color:#bbb4c9;border-radius:99px;padding:8px 12px;font-size:10px}
+.chip.active,.repeat button.sel{background:#b6a4ff45;color:#fff}
+.affirm-list,.list{display:grid;gap:8px}
+.affirm-item{display:grid;grid-template-columns:1fr auto;gap:8px}
+.delete{border:0;background:none;color:#e2b7c7;font-size:18px}
+.practice{min-height:220px;display:grid;place-items:center;text-align:center;background:#b7a4ff0d;border-radius:18px;margin-top:14px}
+.affirm-big{font:400 30px Georgia,serif;max-width:650px;line-height:1.4}
+.gratgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.gratbox{min-height:145px;padding:14px;border:1px solid var(--line);border-radius:17px}
+.gratbox textarea{height:85px;resize:none;width:100%;margin-top:10px;border:0;outline:0;background:transparent;color:#eee;font-size:11px}
+.historyday{padding:14px 0;border-top:1px solid #ffffff0d;font-size:11px}
+.visualgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.upload{display:block;border:1px dashed #d9caff44;border-radius:17px;padding:25px;text-align:center;color:#aaa3b8;cursor:pointer}
+.images{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}
+.thumb{aspect-ratio:1;border-radius:12px;overflow:hidden;position:relative;background:#10152f}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb button{position:absolute;right:4px;top:4px;border:0;border-radius:50%;background:#0009;color:#fff}
+.progressgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.progressbox{padding:20px;border:1px solid var(--line);border-radius:18px}
+.progressbox b{display:block;font:400 30px Georgia,serif;margin-top:8px}
+.mobile-nav{display:none}
+
+@media(max-width:900px){
+.sidebar{width:205px}
+.main{margin-left:205px;padding:17px}
+.cards3{grid-template-columns:1fr}
+.gratgrid{grid-template-columns:1fr 1fr}
+.visualgrid,.grid2{grid-template-columns:1fr}
+.progressgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+.sidebar{display:none}
+.main{margin-left:0;padding:12px 13px 90px}
+.hello{font-size:22px}
+.hero{padding:25px 23px}
+.hero h1{font-size:29px}
+.cards3,.gratgrid{grid-template-columns:1fr}
+.mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:10px;right:10px;bottom:10px;height:65px;border:1px solid var(--line);border-radius:19px;background:#0c1128ed;z-index:20}
+.mobile-nav button{border:0;background:none;color:#8f8b9b;font-size:8px}
+.mobile-nav button.active{color:#fff}
+.mobile-nav i{display:block;font-style:normal;font-size:18px;margin-bottom:4px}
+}
 </style>
 </head>
+
 <body>
-<div id="auth" class="auth"><div class="authcard">
-<div class="star">âœ¦</div><div class="brand">MANIFEST</div><div class="tag">TU REALIDAD COMIENZA AQUÃ</div>
-<div id="loginBox"><h2>INICIA SESIÃ“N</h2><div class="tag">Bienvenida de vuelta a tu espacio.</div>
-<input id="loginEmail" class="field" type="email" placeholder="Correo electrÃ³nico"><input id="loginPass" class="field" type="password" placeholder="ContraseÃ±a">
-<button class="btn primary wide" onclick="login()">ENTRAR âœ¦</button><button class="link" onclick="showRegister()">Crear mi cuenta</button><button class="link" onclick="showAdmin()">âœ¦ Acceso administrador</button></div>
-<div id="registerBox" class="hidden"><h2>CREA TU CUENTA</h2><div class="tag">Tu acceso comienza aquÃ­.</div>
-<input id="regName" class="field" placeholder="Nombre"><input id="regEmail" class="field" type="email" placeholder="Correo electrÃ³nico"><input id="regPass" class="field" type="password" placeholder="ContraseÃ±a"><input id="regPass2" class="field" type="password" placeholder="Confirmar contraseÃ±a">
-<button class="btn primary wide" onclick="register()">CREAR CUENTA âœ¦</button><button class="link" onclick="showLogin()">Ya tengo cuenta</button></div>
-<div id="adminBox" class="hidden"><h2>MANIFEST ADMIN</h2><div class="tag">Centro privado de control</div><input id="adminEmail" class="field" type="email" placeholder="Correo administrador"><input id="adminPass" class="field" type="password" placeholder="ContraseÃ±a"><button class="btn primary wide" onclick="adminLogin()">ENTRAR AL PANEL âœ¦</button><button class="link" onclick="showLogin()">Volver</button></div>
-<div id="authMsg"></div></div></div>
 
-<div id="app" class="app hidden"><aside class="sidebar"><div class="sidebrand">âœ¦ <span class="name">MANIFEST</span><p>TU REALIDAD COMIENZA AQUÃ</p></div><nav class="nav">
-<button data-page="home" onclick="go('home')"><span>âŒ‚</span>Inicio</button><button data-page="affirm" onclick="go('affirm')"><span>âœ§</span>Afirmaciones</button><button data-page="grat" onclick="go('grat')"><span>â™¡</span>Gratitud</button><button data-page="visual" onclick="go('visual')"><span>âœ¦</span>VisualizaciÃ³n</button><button data-page="progress" onclick="go('progress')"><span>â—Œ</span>Mi progreso</button><button data-page="account" onclick="go('account')"><span>â—‰</span>Mi cuenta</button></nav></aside>
-<main class="main"><div class="topbar"><div><div id="hello" class="hello">Bienvenida âœ¦</div><small>Â¿QuÃ© quieres practicar hoy?</small></div><div class="row"><div id="avatar" class="avatar">M</div><button class="btn" onclick="logout()">Salir</button></div></div><div class="content">
-<section id="home" class="module active"><div class="hero"><div class="eyebrow">TU ESPACIO DE MANIFESTACIÃ“N</div><h1>Todo lo que deseas<br>ya existe en una versiÃ³n de ti.</h1><p>Usa este espacio para practicar la identidad, los pensamientos y la realidad que quieres experimentar.</p><button class="btn primary" onclick="go('affirm')">COMENZAR PRÃCTICA âœ¦</button></div><div class="section-title"><h2>Â¿QuÃ© quieres practicar hoy?</h2></div><div class="cards3"><button class="feature" onclick="go('affirm')">âœ§<h3>Afirmaciones</h3><p>Repite, crea e integra nuevas ideas sobre ti y tu realidad.</p></button><button class="feature" onclick="go('grat')">â™¡<h3>Gratitud</h3><p>Agradece como si aquello que deseas ya fuera parte de tu vida.</p></button><button class="feature" onclick="go('visual')">âœ¦<h3>VisualizaciÃ³n</h3><p>Crea una experiencia visual para practicar tu realidad deseada.</p></button></div></section>
+<div id="auth" class="auth">
+<div class="authcard">
 
-<section id="affirm" class="module"><div class="modulehead"><h1>Afirmaciones âœ¦</h1><p>Crea categorÃ­as y practica tus afirmaciones.</p></div><div class="modulecard"><div class="section-title" style="margin-top:0"><h2>Mis categorÃ­as</h2></div><div id="categories" class="category-bar"></div><div class="row" style="margin-top:12px"><input id="newCategory" class="field" placeholder="Ej. Amor propio, Dinero, Nueva identidadâ€¦"><button class="btn primary" onclick="addCategory()">CREAR</button></div></div><div class="grid2" style="margin-top:14px"><div class="modulecard"><div class="section-title" style="margin-top:0"><h2>Mis afirmaciones</h2></div><div id="affList" class="affirm-list"></div><button class="btn primary wide" onclick="addAffirmation()">ï¼‹ AGREGAR AFIRMACIÃ“N</button></div><div class="modulecard"><div class="section-title" style="margin-top:0"><h2>SesiÃ³n</h2></div><div id="repeatButtons" class="repeat"></div><div class="row" style="margin-top:10px"><input id="customRepeat" class="field" type="number" min="1" max="10000" placeholder="Otro nÃºmero"><button class="btn" onclick="setCustomRepeat()">USAR</button></div><div class="practice"><div><div id="practiceCounter" class="small">Selecciona una categorÃ­a</div><div id="practiceText" class="affirm-big">Agrega tus afirmaciones y comienza.</div></div></div><button class="btn primary wide" onclick="startSession()">INICIAR SESIÃ“N âœ¦</button></div></div></section>
+<div class="star">&#10022;</div>
+<div class="brand">MANIFEST</div>
+<div class="tag">TU REALIDAD COMIENZA AQUÍ</div>
 
-<section id="grat" class="module"><div class="modulehead"><h1>Gratitud â™¡</h1><p>Agradece desde la versiÃ³n de ti que ya tiene esa realidad.</p></div><div class="modulecard"><div id="gratGrid" class="gratgrid"></div><button class="btn primary wide" onclick="saveGratitude()">GUARDAR GRATITUD âœ¦</button><div id="gratMsg"></div></div><div class="modulecard" style="margin-top:14px"><div class="section-title" style="margin-top:0"><h2>Mi historial</h2></div><div id="gratHistory"></div></div></section>
+<div id="loginBox">
+<h2>INICIA SESIÓN</h2>
+<div class="tag">Bienvenida de vuelta a tu espacio.</div>
 
-<section id="visual" class="module"><div class="modulehead"><h1>VisualizaciÃ³n âœ¦</h1><p>Construye una experiencia visual con imÃ¡genes y afirmaciones.</p></div><div class="visualgrid"><div class="modulecard"><div class="section-title" style="margin-top:0"><h2>Mis imÃ¡genes</h2></div><label class="upload"><input type="file" accept="image/*" multiple hidden onchange="addImages(event)">âœ¦ AÃ‘ADIR IMÃGENES</label><div id="images" class="images"></div></div><div class="modulecard"><div class="section-title" style="margin-top:0"><h2>Afirmaciones</h2></div><div id="visualAffs" class="list"></div><button class="btn primary wide" onclick="addVisualAff()">ï¼‹ AGREGAR AFIRMACIÃ“N</button><button class="btn wide" onclick="playVisualization()">REPRODUCIR EXPERIENCIA âœ¦</button></div></div><div id="visualStage" class="modulecard" style="margin-top:14px;min-height:300px;display:grid;place-items:center;text-align:center"><div class="affirm-big">Tu visualizaciÃ³n aparecerÃ¡ aquÃ­.</div></div></section>
+<input id="loginEmail" class="field" type="email" placeholder="Correo electrónico">
+<input id="loginPass" class="field" type="password" placeholder="Contraseña">
 
-<section id="progress" class="module"><div class="modulehead"><h1>Mi progreso</h1><p>Observa tu constancia dentro de MANIFEST.</p></div><div class="progressgrid"><div class="progressbox"><span class="small">SESIONES</span><b id="pSessions">0</b></div><div class="progressbox"><span class="small">AFIRMACIONES</span><b id="pAffs">0</b></div><div class="progressbox"><span class="small">DÃAS DE GRATITUD</span><b id="pDays">0</b></div></div></section>
+<button class="btn primary wide" onclick="login()">ENTRAR &#10022;</button>
+<button class="link" onclick="showRegister()">Crear mi cuenta</button>
+<button class="link" onclick="showAdmin()">&#10022; Acceso administrador</button>
+</div>
 
-<section id="account" class="module"><div class="modulehead"><h1>Mi cuenta</h1><p>Tu informaciÃ³n de acceso.</p></div><div class="modulecard"><h2 class="serif">Datos de cuenta</h2><div id="accountData" class="small" style="line-height:2"></div></div></section>
-<section id="admin" class="module"><div class="modulehead"><h1>Panel administrador</h1><p>Control de las cuentas creadas.</p></div><div class="modulecard"><div id="adminData"></div></div></section>
-</div></main><div class="mobile-nav"><button data-page="home" onclick="go('home')"><i>âŒ‚</i>Inicio</button><button data-page="affirm" onclick="go('affirm')"><i>âœ§</i>Afirma</button><button data-page="grat" onclick="go('grat')"><i>â™¡</i>Gratitud</button><button data-page="visual" onclick="go('visual')"><i>âœ¦</i>Visual</button><button data-page="account" onclick="go('account')"><i>â—‰</i>Cuenta</button></div></div>
+<div id="registerBox" class="hidden">
+<h2>CREA TU CUENTA</h2>
+<div class="tag">Tu acceso comienza aquí.</div>
+
+<input id="regName" class="field" placeholder="Nombre">
+<input id="regEmail" class="field" type="email" placeholder="Correo electrónico">
+<input id="regPass" class="field" type="password" placeholder="Contraseña">
+<input id="regPass2" class="field" type="password" placeholder="Confirmar contraseña">
+
+<button class="btn primary wide" onclick="register()">CREAR CUENTA &#10022;</button>
+<button class="link" onclick="showLogin()">Ya tengo cuenta</button>
+</div>
+
+<div id="adminBox" class="hidden">
+<h2>MANIFEST ADMIN</h2>
+<div class="tag">Centro privado de control</div>
+
+<input id="adminEmail" class="field" type="email" placeholder="Correo administrador">
+<input id="adminPass" class="field" type="password" placeholder="Contraseña">
+
+<button class="btn primary wide" onclick="adminLogin()">ENTRAR AL PANEL &#10022;</button>
+<button class="link" onclick="showLogin()">Volver</button>
+</div>
+
+<div id="authMsg"></div>
+
+</div>
+</div>
+
+
+<div id="app" class="app hidden">
+
+<aside class="sidebar">
+
+<div class="sidebrand">
+&#10022; <span class="name">MANIFEST</span>
+<p>TU REALIDAD COMIENZA AQUÍ</p>
+</div>
+
+<nav class="nav">
+<button data-page="home" onclick="go('home')"><span>⌂</span>Inicio</button>
+<button data-page="affirm" onclick="go('affirm')"><span>✧</span>Afirmaciones</button>
+<button data-page="grat" onclick="go('grat')"><span>♡</span>Gratitud</button>
+<button data-page="visual" onclick="go('visual')"><span>✦</span>Visualización</button>
+<button data-page="progress" onclick="go('progress')"><span>◌</span>Mi progreso</button>
+<button data-page="account" onclick="go('account')"><span>◉</span>Mi cuenta</button>
+</nav>
+
+</aside>
+
+
+<main class="main">
+
+<div class="topbar">
+
+<div>
+<div id="hello" class="hello">Bienvenida &#10022;</div>
+<small>¿Qué quieres practicar hoy?</small>
+</div>
+
+<div class="row">
+<div id="avatar" class="avatar">M</div>
+<button class="btn" onclick="logout()">Salir</button>
+</div>
+
+</div>
+
+
+<div class="content">
+
+<section id="home" class="module active">
+
+<div class="hero">
+<div class="eyebrow">TU ESPACIO DE MANIFESTACIÓN</div>
+
+<h1>Todo lo que deseas<br>ya existe en una versión de ti.</h1>
+
+<p>Usa este espacio para practicar la identidad, los pensamientos y la realidad que quieres experimentar.</p>
+
+<button class="btn primary" onclick="go('affirm')">COMENZAR PRÁCTICA &#10022;</button>
+</div>
+
+<div class="section-title">
+<h2>¿Qué quieres practicar hoy?</h2>
+</div>
+
+<div class="cards3">
+
+<button class="feature" onclick="go('affirm')">
+✧
+<h3>Afirmaciones</h3>
+<p>Repite, crea e integra nuevas ideas sobre ti y tu realidad.</p>
+</button>
+
+<button class="feature" onclick="go('grat')">
+♡
+<h3>Gratitud</h3>
+<p>Agradece como si aquello que deseas ya fuera parte de tu vida.</p>
+</button>
+
+<button class="feature" onclick="go('visual')">
+✦
+<h3>Visualización</h3>
+<p>Crea una experiencia visual para practicar tu realidad deseada.</p>
+</button>
+
+</div>
+</section>
+
+
+<section id="affirm" class="module">
+
+<div class="modulehead">
+<h1>Afirmaciones ✦</h1>
+<p>Crea categorías y practica tus afirmaciones.</p>
+</div>
+
+<div class="modulecard">
+
+<div class="section-title" style="margin-top:0">
+<h2>Mis categorías</h2>
+</div>
+
+<div id="categories" class="category-bar"></div>
+
+<div class="row" style="margin-top:12px">
+<input id="newCategory" class="field" placeholder="Ej. Amor propio, Dinero, Nueva identidad…">
+<button class="btn primary" onclick="addCategory()">CREAR</button>
+</div>
+
+</div>
+
+
+<div class="grid2" style="margin-top:14px">
+
+<div class="modulecard">
+
+<div class="section-title" style="margin-top:0">
+<h2>Mis afirmaciones</h2>
+</div>
+
+<div id="affList" class="affirm-list"></div>
+
+<button class="btn primary wide" onclick="addAffirmation()">＋ AGREGAR AFIRMACIÓN</button>
+
+</div>
+
+
+<div class="modulecard">
+
+<div class="section-title" style="margin-top:0">
+<h2>Sesión</h2>
+</div>
+
+<div id="repeatButtons" class="repeat"></div>
+
+<div class="row" style="margin-top:10px">
+<input id="customRepeat" class="field" type="number" min="1" max="10000" placeholder="Otro número">
+<button class="btn" onclick="setCustomRepeat()">USAR</button>
+</div>
+
+<div class="practice">
+<div>
+<div id="practiceCounter" class="small">Selecciona una categoría</div>
+<div id="practiceText" class="affirm-big">Agrega tus afirmaciones y comienza.</div>
+</div>
+</div>
+
+<button class="btn primary wide" onclick="startSession()">INICIAR SESIÓN ✦</button>
+
+</div>
+</div>
+
+</section>
+
+
+<section id="grat" class="module">
+
+<div class="modulehead">
+<h1>Gratitud ♡</h1>
+<p>Agradece desde la versión de ti que ya tiene esa realidad.</p>
+</div>
+
+<div class="modulecard">
+
+<div id="gratGrid" class="gratgrid"></div>
+
+<button class="btn primary wide" onclick="saveGratitude()">GUARDAR GRATITUD ✦</button>
+
+<div id="gratMsg"></div>
+
+</div>
+
+<div class="modulecard" style="margin-top:14px">
+
+<div class="section-title" style="margin-top:0">
+<h2>Mi historial</h2>
+</div>
+
+<div id="gratHistory"></div>
+
+</div>
+
+</section>
+
+
+<section id="visual" class="module">
+
+<div class="modulehead">
+<h1>Visualización ✦</h1>
+<p>Construye una experiencia visual con imágenes y afirmaciones.</p>
+</div>
+
+<div class="visualgrid">
+
+<div class="modulecard">
+
+<div class="section-title" style="margin-top:0">
+<h2>Mis imágenes</h2>
+</div>
+
+<label class="upload">
+<input type="file" accept="image/*" multiple hidden onchange="addImages(event)">
+✦ AÑADIR IMÁGENES
+</label>
+
+<div id="images" class="images"></div>
+
+</div>
+
+
+<div class="modulecard">
+
+<div class="section-title" style="margin-top:0">
+<h2>Afirmaciones</h2>
+</div>
+
+<div id="visualAffs" class="list"></div>
+
+<button class="btn primary wide" onclick="addVisualAff()">＋ AGREGAR AFIRMACIÓN</button>
+<button class="btn wide" onclick="playVisualization()">REPRODUCIR EXPERIENCIA ✦</button>
+
+</div>
+
+</div>
+
+<div id="visualStage" class="modulecard" style="margin-top:14px;min-height:300px;display:grid;place-items:center;text-align:center">
+<div class="affirm-big">Tu visualización aparecerá aquí.</div>
+</div>
+
+</section>
+
+
+<section id="progress" class="module">
+
+<div class="modulehead">
+<h1>Mi progreso</h1>
+<p>Observa tu constancia dentro de MANIFEST.</p>
+</div>
+
+<div class="progressgrid">
+
+<div class="progressbox">
+<span class="small">SESIONES</span>
+<b id="pSessions">0</b>
+</div>
+
+<div class="progressbox">
+<span class="small">AFIRMACIONES</span>
+<b id="pAffs">0</b>
+</div>
+
+<div class="progressbox">
+<span class="small">DÍAS DE GRATITUD</span>
+<b id="pDays">0</b>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="account" class="module">
+
+<div class="modulehead">
+<h1>Mi cuenta</h1>
+<p>Tu información de acceso.</p>
+</div>
+
+<div class="modulecard">
+<h2 class="serif">Datos de cuenta</h2>
+<div id="accountData" class="small" style="line-height:2"></div>
+</div>
+
+</section>
+
+
+<section id="admin" class="module">
+
+<div class="modulehead">
+<h1>Panel administrador</h1>
+<p>Control de las cuentas creadas.</p>
+</div>
+
+<div class="modulecard">
+<div id="adminData"></div>
+</div>
+
+</section>
+
+</div>
+</main>
+
+
+<div class="mobile-nav">
+
+<button data-page="home" onclick="go('home')">
+<i>⌂</i>Inicio
+</button>
+
+<button data-page="affirm" onclick="go('affirm')">
+<i>✧</i>Afirma
+</button>
+
+<button data-page="grat" onclick="go('grat')">
+<i>♡</i>Gratitud
+</button>
+
+<button data-page="visual" onclick="go('visual')">
+<i>✦</i>Visual
+</button>
+
+<button data-page="account" onclick="go('account')">
+<i>◉</i>Cuenta
+</button>
+
+</div>
+
+</div>
+
 
 <script>
-const KEY="MANIFEST_V12_STATE",ADMIN_EMAIL="vanne120198@gmail.com",ADMIN_PASSWORD="vcvm1298";
-let state=load(),me=null,cat="General",reps=10,idx=0,timer=null;
-function load(){try{return JSON.parse(localStorage.getItem(KEY))||{users:{}}}catch(e){return{users:{}}}}
-function save(){localStorage.setItem(KEY,JSON.stringify(state))}
-function esc(v){return String(v??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
-function attr(v){return esc(v).replace(/"/g,"&quot;")}
-function email(v){return String(v||"").trim().toLowerCase()}
-function authMsg(t,ok=false){document.getElementById("authMsg").innerHTML='<div class="notice '+(ok?"ok":"err")+'">'+t+"</div>"}
-function show(id){["loginBox","registerBox","adminBox"].forEach(x=>document.getElementById(x).classList.add("hidden"));document.getElementById(id).classList.remove("hidden");document.getElementById("authMsg").innerHTML=""}
-function showLogin(){show("loginBox")}function showRegister(){show("registerBox")}function showAdmin(){show("adminBox")}
-function register(){let n=document.getElementById("regName").value.trim(),e=email(document.getElementById("regEmail").value),p=document.getElementById("regPass").value,p2=document.getElementById("regPass2").value;if(!n||!e||!p)return authMsg("Completa todos los campos.");if(p!==p2)return authMsg("Las contraseÃ±as no coinciden.");if(p.length<6)return authMsg("La contraseÃ±a debe tener al menos 6 caracteres.");if(state.users[e])return authMsg("Ese correo ya tiene una cuenta.");state.users[e]={name:n,email:e,password:p,categories:{General:[]},gratitude:[],sessions:0,affirmations:0,images:[],visualAffs:[]};save();authMsg("Cuenta creada correctamente. Ya puedes iniciar sesiÃ³n.",true);setTimeout(showLogin,700)}
-function login(){let e=email(document.getElementById("loginEmail").value),p=document.getElementById("loginPass").value;if(!state.users[e])return authMsg("No existe una cuenta con ese correo.");if(state.users[e].password!==p)return authMsg("ContraseÃ±a incorrecta.");me=state.users[e];openApp()}
-function adminLogin(){if(email(document.getElementById("adminEmail").value)!==ADMIN_EMAIL||document.getElementById("adminPass").value!==ADMIN_PASSWORD)return authMsg("Credenciales incorrectas.");me={admin:true,name:"Administradora",email:ADMIN_EMAIL};openApp();go("admin")}
-function openApp(){document.getElementById("auth").classList.add("hidden");document.getElementById("app").classList.remove("hidden");document.getElementById("hello").textContent="Bienvenida "+me.name;document.getElementById("avatar").textContent=me.name.charAt(0).toUpperCase();renderAll();go(me.admin?"admin":"home")}
-function logout(){clearTimeout(timer);me=null;document.getElementById("app").classList.add("hidden");document.getElementById("auth").classList.remove("hidden");showLogin()}
-function go(page){document.querySelectorAll(".module").forEach(x=>x.classList.remove("active"));let el=document.getElementById(page);if(el)el.classList.add("active");document.querySelectorAll("[data-page]").forEach(x=>x.classList.toggle("active",x.dataset.page===page));if(page==="affirm")renderAff();if(page==="grat")renderGrat();if(page==="visual")renderVisual();if(page==="progress")renderProgress();if(page==="account")renderAccount();if(page==="admin")renderAdmin()}
-function u(){return me&&!me.admin?state.users[me.email]:null}
-function renderAll(){if(!me.admin){if(!me.categories)me.categories={General:[]};if(!me.categories.General)me.categories.General=[];renderAff();renderGrat();renderVisual();renderProgress();renderAccount()}}
-function renderAff(){if(!u())return;if(!u().categories[cat])cat=Object.keys(u().categories)[0]||"General";document.getElementById("categories").innerHTML=Object.keys(u().categories).map(c=>'<button class="chip '+(c===cat?"active":"")+'" onclick="selectCat('+JSON.stringify(c)+')">'+esc(c)+"</button>").join("");let a=u().categories[cat]||[];document.getElementById("affList").innerHTML=a.length?a.map((x,i)=>'<div class="affirm-item"><input class="field" value="'+attr(x)+'" onchange="editAff('+i+',this.value)"><button class="delete" onclick="delAff('+i+')">Ã—</button></div>').join(""):'<div class="small">TodavÃ­a no hay afirmaciones en esta categorÃ­a.</div>';document.getElementById("repeatButtons").innerHTML=[5,10,21,50,100].map(n=>'<button class="'+(reps===n?"sel":"")+'" onclick="reps='+n+';renderAff()">'+n+"</button>").join("")}
-function selectCat(c){cat=c;renderAff()}function addCategory(){let i=document.getElementById("newCategory"),n=i.value.trim();if(!n)return;if(u().categories[n])return alert("Esa categorÃ­a ya existe.");u().categories[n]=[];cat=n;i.value="";save();renderAff()}
-function addAffirmation(){u().categories[cat].push("Yo ya vivo la realidad que deseo.");u().affirmations=(u().affirmations||0)+1;save();renderAff()}
-function editAff(i,v){u().categories[cat][i]=v;save()}function delAff(i){u().categories[cat].splice(i,1);save();renderAff()}
-function setCustomRepeat(){let n=parseInt(document.getElementById("customRepeat").value,10);if(n>0){reps=Math.min(n,10000);renderAff()}}
-function startSession(){let a=u().categories[cat]||[];if(!a.length){document.getElementById("practiceText").textContent="Primero agrega al menos una afirmaciÃ³n.";return}idx=0;clearTimeout(timer);u().sessions=(u().sessions||0)+1;save();step(a)}
-function step(a){document.getElementById("practiceCounter").textContent="RepeticiÃ³n "+(idx+1)+" de "+reps;document.getElementById("practiceText").textContent=a[idx%a.length];if(idx+1<reps)timer=setTimeout(()=>{idx++;step(a)},1200)}
-function renderGrat(){if(!u())return;document.getElementById("gratGrid").innerHTML=Array.from({length:5},(_,i)=>'<div class="gratbox"><span class="small">GRATITUD '+(i+1)+'</span><textarea id="g'+i+'" placeholder="Hoy agradezco..."></textarea></div>').join("");document.getElementById("gratHistory").innerHTML=(u().gratitude||[]).slice().reverse().map(x=>'<div class="historyday"><b>'+esc(x.date)+'</b><div style="margin-top:7px">'+x.items.map(esc).join("<br>")+"</div></div>").join("")||'<div class="small">AÃºn no tienes registros.</div>'}
-function saveGratitude(){let items=Array.from({length:5},(_,i)=>document.getElementById("g"+i).value.trim()).filter(Boolean);if(!items.length)return;u().gratitude=u().gratitude||[];u().gratitude.push({date:new Date().toLocaleDateString("es-MX"),items});save();document.getElementById("gratMsg").innerHTML='<div class="notice ok">Gratitud guardada âœ¦</div>';renderGrat()}
-function addImages(e){Array.from(e.target.files||[]).forEach(f=>{let r=new FileReader();r.onload=()=>{u().images=u().images||[];u().images.push(r.result);save();renderVisual()};r.readAsDataURL(f)});e.target.value=""}
-function renderVisual(){if(!u())return;document.getElementById("images").innerHTML=(u().images||[]).map((s,i)=>'<div class="thumb"><img src="'+s+'"><button onclick="removeImage('+i+')">Ã—</button></div>').join("");document.getElementById("visualAffs").innerHTML=(u().visualAffs||[]).map((x,i)=>'<div class="row"><input class="field" value="'+attr(x)+'" onchange="editVisualAff('+i+',this.value)"><button class="delete" onclick="removeVisualAff('+i+')">Ã—</button></div>').join("")}
-function removeImage(i){u().images.splice(i,1);save();renderVisual()}function addVisualAff(){u().visualAffs=u().visualAffs||[];u().visualAffs.push("Mi realidad deseada ya es natural para mÃ­.");save();renderVisual()}function editVisualAff(i,v){u().visualAffs[i]=v;save()}function removeVisualAff(i){u().visualAffs.splice(i,1);save();renderVisual()}
-function playVisualization(){let imgs=u().images||[],a=u().visualAffs||[],stage=document.getElementById("visualStage");if(!imgs.length&&!a.length){stage.innerHTML='<div class="affirm-big">Agrega imÃ¡genes o afirmaciones primero.</div>';return}let q=[...imgs,...a],i=0;clearTimeout(timer);function next(){if(i>=q.length)return;stage.innerHTML=i<imgs.length?'<img src="'+q[i]+'" style="max-width:100%;max-height:500px;border-radius:18px;object-fit:contain">':'<div class="affirm-big">'+esc(q[i])+"</div>";i++;timer=setTimeout(next,2500)}next()}
-function renderProgress(){if(!u())return;document.getElementById("pSessions").textContent=u().sessions||0;document.getElementById("pAffs").textContent=u().affirmations||0;document.getElementById("pDays").textContent=(u().gratitude||[]).length}
-function renderAccount(){if(!u())return;document.getElementById("accountData").innerHTML="<b>Nombre:</b> "+esc(u().name)+"<br><b>Correo:</b> "+esc(u().email)+"<br><b>Sesiones:</b> "+(u().sessions||0)}
-function renderAdmin(){if(!me||!me.admin)return;let users=Object.values(state.users||{});document.getElementById("adminData").innerHTML=users.length?'<table style="width:100%;font-size:11px"><tr><th>Nombre</th><th>Correo</th><th>Sesiones</th></tr>'+users.map(x=>"<tr><td>"+esc(x.name)+"</td><td>"+esc(x.email)+"</td><td>"+(x.sessions||0)+"</td></tr>").join("")+"</table>":'<div class="small">TodavÃ­a no hay usuarios registrados.</div>'}
+
+const KEY="MANIFEST_V12_STATE";
+const ADMIN_EMAIL="vanne120198@gmail.com";
+const ADMIN_PASSWORD="vcvm1298";
+
+let state=load();
+let me=null;
+let cat="General";
+let reps=10;
+let idx=0;
+let timer=null;
+
+
+function load(){
+
+try{
+
+return JSON.parse(localStorage.getItem(KEY))||{users:{}};
+
+}catch(e){
+
+return {users:{}};
+
+}
+
+}
+
+
+function save(){
+
+localStorage.setItem(KEY,JSON.stringify(state));
+
+}
+
+
+function esc(v){
+
+return String(v??"")
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;");
+
+}
+
+
+function attr(v){
+
+return esc(v).replace(/"/g,"&quot;");
+
+}
+
+
+function email(v){
+
+return String(v||"").trim().toLowerCase();
+
+}
+
+
+function authMsg(t,ok=false){
+
+document.getElementById("authMsg").innerHTML=
+'<div class="notice '+(ok?"ok":"err")+'">'+t+"</div>";
+
+}
+
+
+function show(id){
+
+["loginBox","registerBox","adminBox"]
+.forEach(x=>document.getElementById(x).classList.add("hidden"));
+
+document.getElementById(id).classList.remove("hidden");
+
+document.getElementById("authMsg").innerHTML="";
+
+}
+
+
+function showLogin(){
+show("loginBox");
+}
+
+
+function showRegister(){
+show("registerBox");
+}
+
+
+function showAdmin(){
+show("adminBox");
+}
+
+
+function register(){
+
+let n=document.getElementById("regName").value.trim();
+
+let e=email(document.getElementById("regEmail").value);
+
+let p=document.getElementById("regPass").value;
+
+let p2=document.getElementById("regPass2").value;
+
+
+if(!n||!e||!p){
+
+return authMsg("Completa todos los campos.");
+
+}
+
+
+if(p!==p2){
+
+return authMsg("Las contraseñas no coinciden.");
+
+}
+
+
+if(p.length<6){
+
+return authMsg("La contraseña debe tener al menos 6 caracteres.");
+
+}
+
+
+if(state.users[e]){
+
+return authMsg("Ese correo ya tiene una cuenta.");
+
+}
+
+
+state.users[e]={
+
+name:n,
+
+email:e,
+
+password:p,
+
+categories:{
+General:[]
+},
+
+gratitude:[],
+
+sessions:0,
+
+affirmations:0,
+
+images:[],
+
+visualAffs:[]
+
+};
+
+
+save();
+
+authMsg("Cuenta creada correctamente. Ya puedes iniciar sesión.",true);
+
+setTimeout(showLogin,700);
+
+}
+
+
+function login(){
+
+let e=email(document.getElementById("loginEmail").value);
+
+let p=document.getElementById("loginPass").value;
+
+
+if(!state.users[e]){
+
+return authMsg("No existe una cuenta con ese correo.");
+
+}
+
+
+if(state.users[e].password!==p){
+
+return authMsg("Contraseña incorrecta.");
+
+}
+
+
+me=state.users[e];
+
+openApp();
+
+}
+
+
+function adminLogin(){
+
+let e=email(document.getElementById("adminEmail").value);
+
+let p=document.getElementById("adminPass").value;
+
+
+if(e!==ADMIN_EMAIL||p!==ADMIN_PASSWORD){
+
+return authMsg("Credenciales incorrectas.");
+
+}
+
+
+me={
+admin:true,
+name:"Administradora",
+email:ADMIN_EMAIL
+};
+
+openApp();
+
+go("admin");
+
+}
+
+
+function openApp(){
+
+document.getElementById("auth").classList.add("hidden");
+
+document.getElementById("app").classList.remove("hidden");
+
+document.getElementById("hello").textContent="Bienvenida "+me.name;
+
+document.getElementById("avatar").textContent=
+me.name.charAt(0).toUpperCase();
+
+renderAll();
+
+go(me.admin?"admin":"home");
+
+}
+
+
+function logout(){
+
+clearTimeout(timer);
+
+me=null;
+
+document.getElementById("app").classList.add("hidden");
+
+document.getElementById("auth").classList.remove("hidden");
+
 showLogin();
+
+}
+
+
+function go(page){
+
+document.querySelectorAll(".module")
+.forEach(x=>x.classList.remove("active"));
+
+let el=document.getElementById(page);
+
+if(el){
+el.classList.add("active");
+}
+
+document.querySelectorAll("[data-page]")
+.forEach(x=>x.classList.toggle("active",x.dataset.page===page));
+
+if(page==="affirm")renderAff();
+
+if(page==="grat")renderGrat();
+
+if(page==="visual")renderVisual();
+
+if(page==="progress")renderProgress();
+
+if(page==="account")renderAccount();
+
+if(page==="admin")renderAdmin();
+
+}
+
+
+function u(){
+
+return me&&!me.admin?state.users[me.email]:null;
+
+}
+
+
+function renderAll(){
+
+if(!me.admin){
+
+if(!me.categories){
+me.categories={General:[]};
+}
+
+if(!me.categories.General){
+me.categories.General=[];
+}
+
+renderAff();
+
+renderGrat();
+
+renderVisual();
+
+renderProgress();
+
+renderAccount();
+
+}
+
+}
+
+
+function renderAff(){
+
+if(!u())return;
+
+if(!u().categories[cat]){
+
+cat=Object.keys(u().categories)[0]||"General";
+
+}
+
+
+document.getElementById("categories").innerHTML=
+Object.keys(u().categories)
+.map(c=>
+'<button class="chip '+(c===cat?"active":"")+
+'" onclick="selectCat('+JSON.stringify(c)+')">'+
+esc(c)+
+"</button>"
+)
+.join("");
+
+
+let a=u().categories[cat]||[];
+
+
+document.getElementById("affList").innerHTML=
+
+a.length?
+
+a.map((x,i)=>
+'<div class="affirm-item">'+
+'<input class="field" value="'+attr(x)+
+'" onchange="editAff('+i+',this.value)">'+
+'<button class="delete" onclick="delAff('+i+')">×</button>'+
+"</div>"
+).join("")
+
+:
+
+'<div class="small">Todavía no hay afirmaciones en esta categoría.</div>';
+
+
+document.getElementById("repeatButtons").innerHTML=
+
+[5,10,21,50,100]
+.map(n=>
+'<button class="'+(reps===n?"sel":"")+
+'" onclick="reps='+n+';renderAff()">'+
+n+
+"</button>"
+)
+.join("");
+
+}
+
+
+function selectCat(c){
+
+cat=c;
+
+renderAff();
+
+}
+
+
+function addCategory(){
+
+let i=document.getElementById("newCategory");
+
+let n=i.value.trim();
+
+if(!n)return;
+
+if(u().categories[n]){
+
+return alert("Esa categoría ya existe.");
+
+}
+
+u().categories[n]=[];
+
+cat=n;
+
+i.value="";
+
+save();
+
+renderAff();
+
+}
+
+
+function addAffirmation(){
+
+u().categories[cat].push(
+"Yo ya vivo la realidad que deseo."
+);
+
+u().affirmations=(u().affirmations||0)+1;
+
+save();
+
+renderAff();
+
+}
+
+
+function editAff(i,v){
+
+u().categories[cat][i]=v;
+
+save();
+
+}
+
+
+function delAff(i){
+
+u().categories[cat].splice(i,1);
+
+save();
+
+renderAff();
+
+}
+
+
+function setCustomRepeat(){
+
+let n=parseInt(
+document.getElementById("customRepeat").value,
+10
+);
+
+if(n>0){
+
+reps=Math.min(n,10000);
+
+renderAff();
+
+}
+
+}
+
+
+function startSession(){
+
+let a=u().categories[cat]||[];
+
+if(!a.length){
+
+document.getElementById("practiceText").textContent=
+"Primero agrega al menos una afirmación.";
+
+return;
+
+}
+
+idx=0;
+
+clearTimeout(timer);
+
+u().sessions=(u().sessions||0)+1;
+
+save();
+
+step(a);
+
+}
+
+
+function step(a){
+
+document.getElementById("practiceCounter").textContent=
+"Repetición "+(idx+1)+" de "+reps;
+
+document.getElementById("practiceText").textContent=
+a[idx%a.length];
+
+if(idx+1<reps){
+
+timer=setTimeout(()=>{
+
+idx++;
+
+step(a);
+
+},1200);
+
+}
+
+}
+
+
+function renderGrat(){
+
+if(!u())return;
+
+
+document.getElementById("gratGrid").innerHTML=
+
+Array.from({length:5},(_,i)=>
+
+'<div class="gratbox">'+
+'<span class="small">GRATITUD '+(i+1)+'</span>'+
+'<textarea id="g'+i+'" placeholder="Hoy agradezco..."></textarea>'+
+"</div>"
+
+).join("");
+
+
+document.getElementById("gratHistory").innerHTML=
+
+(u().gratitude||[])
+.slice()
+.reverse()
+.map(x=>
+
+'<div class="historyday">'+
+"<b>"+esc(x.date)+"</b>"+
+'<div style="margin-top:7px">'+
+x.items.map(esc).join("<br>")+
+"</div>"+
+"</div>"
+
+).join("")
+
+||
+
+'<div class="small">Aún no tienes registros.</div>';
+
+}
+
+
+function saveGratitude(){
+
+let items=
+
+Array.from(
+{length:5},
+(_,i)=>
+document.getElementById("g"+i).value.trim()
+)
+
+.filter(Boolean);
+
+
+if(!items.length)return;
+
+
+u().gratitude=u().gratitude||[];
+
+u().gratitude.push({
+
+date:new Date().toLocaleDateString("es-MX"),
+
+items
+
+});
+
+
+save();
+
+document.getElementById("gratMsg").innerHTML=
+'<div class="notice ok">Gratitud guardada ✦</div>';
+
+renderGrat();
+
+}
+
+
+function addImages(e){
+
+Array.from(e.target.files||[])
+.forEach(f=>{
+
+let r=new FileReader();
+
+r.onload=()=>{
+
+u().images=u().images||[];
+
+u().images.push(r.result);
+
+save();
+
+renderVisual();
+
+};
+
+r.readAsDataURL(f);
+
+});
+
+e.target.value="";
+
+}
+
+
+function renderVisual(){
+
+if(!u())return;
+
+
+document.getElementById("images").innerHTML=
+
+(u().images||[])
+.map((s,i)=>
+
+'<div class="thumb">'+
+'<img src="'+s+'">'+
+'<button onclick="removeImage('+i+')">×</button>'+
+"</div>"
+
+)
+.join("");
+
+
+document.getElementById("visualAffs").innerHTML=
+
+(u().visualAffs||[])
+.map((x,i)=>
+
+'<div class="row">'+
+'<input class="field" value="'+attr(x)+
+'" onchange="editVisualAff('+i+',this.value)">'+
+'<button class="delete" onclick="removeVisualAff('+i+')">×</button>'+
+"</div>"
+
+)
+.join("");
+
+}
+
+
+function removeImage(i){
+
+u().images.splice(i,1);
+
+save();
+
+renderVisual();
+
+}
+
+
+function addVisualAff(){
+
+u().visualAffs=u().visualAffs||[];
+
+u().visualAffs.push(
+"Mi realidad deseada ya es natural para mí."
+);
+
+save();
+
+renderVisual();
+
+}
+
+
+function editVisualAff(i,v){
+
+u().visualAffs[i]=v;
+
+save();
+
+}
+
+
+function removeVisualAff(i){
+
+u().visualAffs.splice(i,1);
+
+save();
+
+renderVisual();
+
+}
+
+
+function playVisualization(){
+
+let imgs=u().images||[];
+
+let a=u().visualAffs||[];
+
+let stage=document.getElementById("visualStage");
+
+
+if(!imgs.length&&!a.length){
+
+stage.innerHTML=
+'<div class="affirm-big">Agrega imágenes o afirmaciones primero.</div>';
+
+return;
+
+}
+
+
+let q=[...imgs,...a];
+
+let i=0;
+
+clearTimeout(timer);
+
+
+function next(){
+
+if(i>=q.length)return;
+
+
+stage.innerHTML=
+
+i<imgs.length?
+
+'<img src="'+q[i]+'" style="max-width:100%;max-height:500px;border-radius:18px;object-fit:contain">'
+
+:
+
+'<div class="affirm-big">'+esc(q[i])+"</div>";
+
+
+i++;
+
+timer=setTimeout(next,2500);
+
+}
+
+
+next();
+
+}
+
+
+function renderProgress(){
+
+if(!u())return;
+
+document.getElementById("pSessions").textContent=
+u().sessions||0;
+
+document.getElementById("pAffs").textContent=
+u().affirmations||0;
+
+document.getElementById("pDays").textContent=
+(u().gratitude||[]).length;
+
+}
+
+
+function renderAccount(){
+
+if(!u())return;
+
+document.getElementById("accountData").innerHTML=
+
+"<b>Nombre:</b> "+
+esc(u().name)+
+
+"<br><b>Correo:</b> "+
+esc(u().email)+
+
+"<br><b>Sesiones:</b> "+
+(u().sessions||0);
+
+}
+
+
+function renderAdmin(){
+
+if(!me||!me.admin)return;
+
+
+let users=Object.values(state.users||{});
+
+
+document.getElementById("adminData").innerHTML=
+
+users.length?
+
+'<table style="width:100%;font-size:11px">'+
+"<tr><th>Nombre</th><th>Correo</th><th>Sesiones</th></tr>"+
+
+users.map(x=>
+"<tr>"+
+"<td>"+esc(x.name)+"</td>"+
+"<td>"+esc(x.email)+"</td>"+
+"<td>"+(x.sessions||0)+"</td>"+
+"</tr>"
+).join("")+
+
+"</table>"
+
+:
+
+'<div class="small">Todavía no hay usuarios registrados.</div>';
+
+}
+
+
+showLogin();
+
 </script>
+
 </body>
 </html>
